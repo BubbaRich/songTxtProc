@@ -342,6 +342,7 @@ All songs published by Core Music Publishing (SOCAN) for the world excluding USA
 <br>In a world where I feel so small
 <br>I can't stop thinking big
 <br>
+
 <br><hr class="style14"><br><a name=TR2></a><font size=7 face="Caravan Script" color=maroon>BU2B</font><br>
 <STRONG><FONT SIZE="1">Music: Geddy Lee and Alex Lifeson / Lyrics: Neil Peart</FONT><BR><BR></STRONG>
 <I><font color=maroon>WE WERE ALWAYS TAUGHT</font> that we lived in "the best of all possible worlds." The Watchmaker ruled from Crown City through the Regulators; the alchemist-priests gave us coldfire for power and light, and everything was well ordered. We accepted our various individual fates as inevitable, for we had also been taught, "Whatever happens to us must be what we deserve, for it could not happen to us if we did not deserve it."<br><br>None of it seemed right to me . . .</I>
@@ -455,6 +456,7 @@ All songs published by Core Music Publishing (SOCAN) for the world excluding USA
 <br>Oh - They tried to get me
 <br>Oh - They'll never forget me
 <br>
+
 <br><hr class="style14"><br><a name=TR5></a><font size=7 face="Caravan Script" color=maroon>Carnies</font><br>
 <STRONG><FONT SIZE="1">Music: Geddy Lee and Alex Lifeson / Lyrics: Neil Peart</FONT><BR><BR></STRONG>
 <I><font color=maroon>I FOUND WORK WITH A TRAVELING CARNIVAL,</font> and for the Midsummer Festival in Crown City, our games and rides were set up right in the middle of the Square, beneath the Angels. One night, amid the noise and confusion of the crowded midway, I saw a man working with wires and wooden barrels. He stood and turned - the Anarchist! - holding a clockwork detonator in his hand. I called out to warn the crowd, then suddenly he threw the device at me, and I caught it automatically - just as the people turned to look my way. I escaped, but in disgrace, and fled down the Winding Pinion River to the sea.</I>
@@ -523,6 +525,7 @@ All songs published by Core Music Publishing (SOCAN) for the world excluding USA
 <br>
 <br>A goddess with wings on her heels . . .
 <br>
+
 <br><hr class="style14"><br><a name=TR7></a><font size=7 face="Caravan Script" color=maroon>Seven Cities Of Gold</font><br>
 <STRONG><FONT SIZE="1">Music: Geddy Lee and Alex Lifeson / Lyrics: Neil Peart</FONT><BR><BR></STRONG>
 <I><font color=maroon>THE LEGEND HAD PASSED DOWN FOR GENERATIONS.</font> Far across the Western Sea, where the steamliners could not fly, lay a wilderness land hiding seven cities of gold. I dared the crossing on one of the stout ships that followed the trade route to Poseidon, a tough port city. I worked there for a while on the steamliners that served the alchemy mines, then eventually set out into the Redrock Desert. The stones were sculpted into unearthly monuments, and the country grew cold as I traveled north in search of the most famous City of Gold: Cíbola. Its name had sounded in my dreams since childhood.</I>
@@ -559,6 +562,7 @@ All songs published by Core Music Publishing (SOCAN) for the world excluding USA
 <br>That gleam in the distance could be heaven's gate
 <br>A long-awaited treasure at the end of my cruel fate
 <br>
+
 <br><hr class="style14"><br><a name=TR8></a><font size=7 face="Caravan Script" color=maroon>The Wreckers</font><br>
 <STRONG><FONT SIZE="1">Music: Geddy Lee and Alex Lifeson / Lyrics: Neil Peart</FONT><BR><BR></STRONG>
 <I><font color=maroon>NARROWLY ESCAPING A FROZEN DEATH IN THAT DESERT,</font> I made my way back to Poseidon, and found a berth on a homeward ship. Caught in a terrible storm, we seemed to find salvation in an unexpected signal light. Steering toward it, we soon learned it was false - placed by the denizens to lure ships to their doom on the jagged reefs. They plundered the cargos and abandoned the crews and passengers to the icy waves.</I>
@@ -662,6 +666,7 @@ All songs published by Core Music Publishing (SOCAN) for the world excluding USA
 <br>Though the balance tilts against me
 <br>I was brought up to believe
 <br>
+
 <br><hr class="style14"><br><a name=TR11></a><font size=7 face="Caravan Script" color=maroon>Wish Them Well</font><br>
 <STRONG><FONT SIZE="1">Music: Geddy Lee and Alex Lifeson / Lyrics: Neil Peart</FONT><BR><BR></STRONG>
 <I><font color=maroon>VICTIMIZED, BEREAVED, AND DISAPPOINTED, SEEMINGLY AT EVERY TURN,</font> I still resist feeling defeated, or cynical. I have come to believe that anger and grudges are burning embers in the heart not worth carrying through life. The best response to those who wound me is to get away from them - and wish them well.</I>
@@ -695,6 +700,7 @@ All songs published by Core Music Publishing (SOCAN) for the world excluding USA
 <br>
 <br>Just wish them well
 <br>
+
 <br><hr class="style14"><br><a name=TR12></a><font size=7 face="Caravan Script" color=maroon>The Garden</font><br>
 <STRONG><FONT SIZE="1">Music: Geddy Lee and Alex Lifeson / Lyrics: Neil Peart</FONT><BR><BR></STRONG>
 <I><font color=maroon>LONG AGO I READ A STORY FROM ANOTHER TIMELINE</font> about a character named Candide. He also survived a harrowing series of misadventures and tragedies, then settled on a farm near Constantinople. Listening to a philosophical rant, Candide replied, "That is all very well, but now we must tend our garden." 
