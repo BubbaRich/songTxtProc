@@ -48,6 +48,7 @@ def remove_bracketed_text(line):
     OUT_STATE = 1
     IN_STATE = 2
     state = OUT_STATE
+    #print(line)
     for ii in range(len(line.text)):
         if state == OUT_STATE:
             if line.text[ii]=='<':
@@ -61,7 +62,7 @@ def remove_bracketed_text(line):
             if line.text[ii]=='>':
                 state = OUT_STATE
             continue
-    return capwords(output_string)
+    return fileLine(line.num, output_string)
 
 def find_album_title(lineList):
     found_first = False
@@ -138,23 +139,61 @@ def find_next_lyrics(lineList, pattern):
     return start_num, end_num, lines
 
 
-def clean_song_lyrics(roughLyrics):
+def strip_text(line):
+    return fileLine(line.num, line.text.strip())
+
+def clean_lyrics_list(roughLyrics):
     # delete more than one empty line in a row
     # replace &nbsp; with 2 spaces?
-    for line in roughtLyrics:
-
-    return cleanedLyrics
+    # remove byline
+    # add 5 empty lines above
+    # replace Music: line with empty line to put blank between song title and text
+    cleaned_lyrics = []
+    last_line_blank = False
+    for line in roughLyrics:
+        line = remove_bracketed_text(line)
+        line = strip_text(line)
+        if len(line.text) != 0: #if the line has no contents
+            last_line_blank = False
+            # process other things in text line see above
+            # then pack line text into new fileLine using old number and new text
+            out_text = line.text
+            if 'Music:' in out_text:
+                out_text = ''
+            else:
+                out_text = re.sub('\&nbsp;','  ', out_text)
+            new_line = fileLine(line.num, out_text)
+            cleaned_lyrics.append(new_line)
+        else:
+            if not last_line_blank:
+                # if not lastLineBlank then output new blank line with this line number
+                new_line = fileLine(line.num, '')
+                cleaned_lyrics.append(new_line)
+            last_line_blank = True
+    if len(cleaned_lyrics[1].text) > 0:
+        if cleaned_lyrics[1].num - cleaned_lyrics[0].num > 1:
+            new_num = cleaned_lyrics[0].num + 1
+        else:
+            new_num = cleaned_lyrics[0].num + 0.5
+        cleaned_lyrics.insert(1, fileLine(new_num,''))
+    top_line_num = cleaned_lyrics[0].num
+    empty_header = []
+    for ii in range(top_line_num-5,top_line_num):
+        empty_header.append(fileLine(ii,''))
+    cleaned_lyrics = empty_header + cleaned_lyrics
+    return cleaned_lyrics
 
 
 def find_lyrics_list(lineList, sngInfoList):
     lyrics_list = []
     numSongs = len(sngInfoList)
     song_tags = [a.tag for a in sngInfoList]
-    print(numSongs, song_tags)
+    #print(numSongs, song_tags)
     for song_tag in song_tags:
         song_pattern = r'<a name\=' + song_tag
         start_line, end_line, song_lines = find_next_lyrics(lineList, song_pattern)
-        lyrics_list.append(song_lines)
+        cleaned_lyrics = clean_lyrics_list(song_lines)
+        lyrics_list.append(cleaned_lyrics)
         lineList = truncate_line_list(lineList, end_line)
     return lyrics_list
 
@@ -172,12 +211,7 @@ def find_lyrics_list(lineList, sngInfoList):
 def print_all_songs(songInfo,lyricsList):
     for songData in zip(songInfo, lyricsList):
         for line in songData[1]:
-            #print(line.text)
-            print(remove_bracketed_text(line))
-        print()
-        print()
-        print()
-        print()
+            print(line.text)
 
 
 albumNum = 0        
@@ -192,9 +226,9 @@ for albumName in INPUT_FILE_LIST:
             lineNum += 1
 
     albumTitleLine = find_album_title(albumList)
-    print(albumTitleLine)
-    print()
-    albumTitleText = remove_bracketed_text(albumTitleLine)
+    #print(albumTitleLine)
+    #print()
+    albumTitleText = capwords(remove_bracketed_text(albumTitleLine).text)
     print(albumTitleText)
     #print(albumNum, albumTitleText)
     albumNum += 1
@@ -203,7 +237,7 @@ for albumName in INPUT_FILE_LIST:
     #print(albumLYRline)
     newLineList = truncate_line_list(newLineList, albumLYRline.num + 3, 0)
     songInfoList = find_song_info(newLineList)
-    #print(songInfoList)
+    print(songInfoList)
     lyricsList = find_lyrics_list(newLineList, songInfoList)
     #print(lyricsList)
     print_all_songs(songInfoList, lyricsList)
